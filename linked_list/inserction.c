@@ -13,7 +13,6 @@ TLSE * TLSE_begin_inserction(TLSE *list, int info) {
     return new_node; // Return a new list wich begin with a new node
 }
 
-
 TLSE * TLSE_end_inserction_recursive(TLSE *list, int info) {
     if(list->next == NULL) { // if list pointer to NULL, insert a new node in list  and return tha new list
         return TLSE_begin_inserction(list, info);
