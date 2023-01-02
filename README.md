@@ -1,5 +1,5 @@
 # estrutura-de-dados
-Algoritmos e resumos aprendidos da disciplina de Estrutura de Dados e Seus Algoritmos ministrado pela prof. DSc Isabel Rosseti na Universidade Federal Fluminense (UFF) no semestre de 2022/01
+Algoritmos e resumos aprendidos da disciplina de Estrutura de Dados e Seus Algoritmos ministrada pela prof. DSc Isabel Rosseti na Universidade Federal Fluminense (UFF) no semestre de 2022/01
 
 Data structures are a important piece of computation. One of the most accepted definitions to a computer is a system tha input a certain amount of data, process this data and return this processed data.
 
