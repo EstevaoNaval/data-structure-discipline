@@ -98,15 +98,3 @@ class BinaryTree:
             return root
         root.set__rightNode(self.__remove(root.get__rightNode(), data))
         return root
-        
-
-
-
-
-
-
-
-        
-
-        
-        
