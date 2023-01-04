@@ -18,7 +18,8 @@ class Node:
 
 class BinaryTree:
     def __init__(self, rootData = None):
-        self.root = Node(rootData)
+        if(rootData): self.root = Node(rootData)
+        else: self.root = None
     
     def print(self):
         self._inOrderTransversal(self.root)

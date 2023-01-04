@@ -12,8 +12,11 @@ class Node:
     def set__next(self, next): self.__next = next
 
 class LinkedList:
-    def __init__(self, data):
-        self.__root = Node(data)
+    def __init__(self, data=None):
+        if(data):
+            self.__root = Node(data)
+        else:
+            self.__root = None
     
     def get__root(self): return self.__root
 
@@ -45,3 +48,26 @@ class LinkedList:
         node.set__next(root)
 
         return node
+
+    def insertEnd(self, data):
+        self.__root = self.__insertEnd(self.__root, data)
+    
+    def __insertEnd(self,root, data):
+        if(root is None): return self.__insert(root, data)
+        
+        root.set__next(self.__insertEnd(root.get__next(), data))
+
+        return root
+
+    def insertSorted(self, data):
+        self.__root = self.__insertSorted(self.__root, data)
+
+    def __insertSorted(self, root, data):
+        if(root is None or data <= root.get__data()):
+            return self.__insert(root, data)
+        
+        root.set__next(self.__insertSorted(root.get__next(), data))
+
+        return root
+
+    

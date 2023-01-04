@@ -6,7 +6,10 @@ from BinaryTree import Node
 
 class BST:
     def __init__(self, data=None):
-        self.__root = Node(data, None, None)
+        if(data):
+            self.__root = Node(data, None, None)
+        else:
+            self.__root = None
 
     def get__root(self): return self.__root
 
