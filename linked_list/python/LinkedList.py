@@ -18,9 +18,11 @@ class LinkedList:
         else:
             self.__root = None
     
-    def get__root(self): return self.__root
+    def get__root(self): 
+        return self.__root
 
-    def set__root(self, root): self.__root = root
+    def set__root(self, root): 
+        self.__root = root
 
     def print(self):
         self.__print(self.__root)
@@ -31,6 +33,18 @@ class LinkedList:
         print(root.get__data())
         self.__print(root.get__next())
     
+    def search(self, data):
+        return self.__search(self.__root, data)
+
+    def __search(self, root, data):
+        if(root == None or root.get__data() == data):
+            return root
+
+        resp = self.__search(root.get__next(), data)
+
+        return resp
+
+
     def printReverse(self):
         self.__printReverse(self.__root)
 
@@ -70,4 +84,27 @@ class LinkedList:
 
         return root
 
-    
+    def remove(self, data):
+        self.__root = self.__remove(self.__root, data)
+
+    def __remove(self, root, data):
+        atual, anterior = root, None
+
+        while(atual):
+            if(atual.get__data() == data):
+                if(anterior is None):
+                    aux = root.get__next()
+                    del root
+                    root = aux
+                    atual = root
+                elif(anterior):
+                    aux = atual.get__next()
+                    del atual
+                    atual = aux
+                    anterior.set__next(atual)
+                
+                continue
+            anterior = atual
+            atual = atual.get__next()
+        
+        return root

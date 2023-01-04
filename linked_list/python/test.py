@@ -1,12 +1,29 @@
 from LinkedList import LinkedList
 
 list = LinkedList()
-list.insertSorted(35)
-list.insertSorted(56)
-list.insertSorted(21)
-list.insertSorted(55)
-list.insertSorted(12)
-list.insertSorted(49)
-list.insertSorted(100)
+list.insert(35)
+list.insert(12)
+list.insert(56)
+list.insert(21)
+list.insert(49)
+list.insert(55)
+list.insert(49)
+list.insert(100)
+
+print()
+print(list.search(100).get__data())
+print(list.search(56).get__data())
+
+print()
+
+list.print()
+print()
+
+list.remove(12)
+list.remove(100)
+list.remove(49)
+
+print(list.search(100))
+print()
 
 list.print()
