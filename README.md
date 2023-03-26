@@ -14,6 +14,6 @@ With this in mind, a subject of Data Structures in majors and minors related to 
 - AVL Tree
 - B and B+ Tree
 - Hash Table stored in Principal and Second Memory
-- Binary Heap applied to Heapsort, and stored in Principal and Second Memory.
+- Binary Heap applied to Heapsort and stored in Principal and Second Memory.
 
 This repository brings my resume about each topic from this subject and their algorithms as well.
