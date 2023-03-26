@@ -1,7 +1,7 @@
 # Data Structure Subject
 Algoritmos e resumos aprendidos da disciplina de Estrutura de Dados e Seus Algoritmos ministrada pela prof. DSc Isabel Rosseti na Universidade Federal Fluminense (UFF) no semestre de 2022/01
 
-Data structures are a important piece of computation. One of the most accepted definitions to a computer is a system tha input a certain amount of data, process this data and return this processed data.
+Data structures are an important piece of computation. One of the most accepted definitions to a computer is a system tha input a certain amount of data, process this data and return this processed data.
 
 You must organize this data throught a lot of models, wich can be more or less efficients. It will depend on case by case. However, understand a good amount of them, at least the best known, is a key to someone who will be capable of organize this data with more efficiency and, with that, be a step closer to be a good programmer.
 
